@@ -69,10 +69,9 @@ function MapPage(props) {
               <BackButton className="back-icon"/>
             </IconButton>
           </div>
-          
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: 'AIzaSyD1LKqeIf7_dF7UhVc9JGzNbo_vUM3gOjE',
+              key: 'AIzaSyBPtCeO56OINKc-kpae1crS0QqaPzc92Co',
               language: 'en'
             }}
             center={{ lat: lat, lng: lng }}
