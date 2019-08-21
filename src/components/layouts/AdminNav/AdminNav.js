@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import clsx from 'clsx';
@@ -127,8 +128,7 @@ const AdminNav = (props) => {
             </Typography>
           </Link>
           <div className="nav-right">
-            <span className="account-name">Sommer Collins</span>
-
+            <span className="account-name">Hello, {props.reduxStore.user.username}!</span>
             <span className="account-logout">
               <LogOutButton />
             </span>
@@ -194,4 +194,8 @@ const AdminNav = (props) => {
   );
 }
 
-export default AdminNav;
+const mapStateToRedux = reduxStore => ({
+  reduxStore
+});
+
+export default connect(mapStateToRedux)(AdminNav);
