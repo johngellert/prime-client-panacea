@@ -8,7 +8,7 @@ Panacea offers a carefully compiled perspective into each city’s unique health
 An admin will be able to log into a desktop-first view and easily access the Panacea database to add new cities, organizations, and medication translations as well as search and edit existing content.
 
 #### This version uses: ###
-* React
+* React-Hooks
 * Redux
 * Google Maps API
 * REST Countries
