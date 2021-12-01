@@ -11,6 +11,7 @@ router.get('/:id', (req, res) => {
         res.send(result.rows);
     }).catch(error => {
         res.sendStatus(500);
+        console.log(error);
     })
 })
 
@@ -34,6 +35,7 @@ router.post('/', rejectUnauthenticated, (req, res) => {
         })
         .catch((error) => {
             res.sendStatus(500);
+            console.log(error);
         });
 })
 
@@ -45,6 +47,7 @@ router.delete('/:id', (req, res) => {
         })
         .catch((err) => {
             res.sendStatus(500);
+            console.log(error);
         });
 });
 

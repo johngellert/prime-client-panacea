@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
             res.send(result.rows);
         })
         .catch((error) => {
-            res.sendStatus(500)
+            res.sendStatus(500);
+            console.log(error);
         })
 })
 
@@ -22,7 +23,8 @@ router.get('/city/:cityName', (req, res) => {
             res.send(result.rows[0]);
         })
         .catch((error) => {
-            res.sendStatus(500)
+            res.sendStatus(500);
+            console.log(error);
         })
 })
 
@@ -34,7 +36,8 @@ router.get('/:id', (req, res) => {
             res.send(result.rows[0]);
         })
         .catch((error) => {
-            res.sendStatus(500)
+            res.sendStatus(500);
+            console.log(error);
         })
 })
 
@@ -93,6 +96,7 @@ router.post('/', rejectUnauthenticated, (req, res) => {
         })
         .catch((error) => {
             res.sendStatus(500);
+            console.log(error);
         });
 });
 
@@ -151,7 +155,8 @@ router.put('/', rejectUnauthenticated, (req, res) => {
             res.sendStatus(200)
         })
         .catch((error) => {
-            res.sendStatus(500)
+            res.sendStatus(500);
+            console.log(error);
         });
 });
 
@@ -162,6 +167,7 @@ router.delete('/:id', rejectUnauthenticated, (req, res) => {
       .then(() => { res.sendStatus(200); })
       .catch((err) => {
         res.sendStatus(500);
+        console.log(error);
       });
   });
 

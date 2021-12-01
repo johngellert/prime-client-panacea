@@ -26,6 +26,7 @@ router.get("/city", async (req, res, next) => {
     res.send(rows);
   } catch (error) {
     next(error);
+    console.log(error);
   }
 });
 
@@ -46,6 +47,7 @@ router.get("/country", async (req, res, next) => {
     res.send(rows);
   } catch (error) {
     next(error);
+    console.log(error);
   }
 });
 
@@ -104,6 +106,7 @@ router.get("/organization", async (req, res, next) => {
     res.send(rows);
   } catch (error) {
     next(error);
+    console.log(error);
   }
 });
 

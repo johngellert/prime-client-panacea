@@ -13,8 +13,8 @@ router.get('/:id', (req, res) => {
             res.send(result.rows[0]);
         })
         .catch((error) => {
-            console.log('Error completely SELECT org query', error)
-            res.sendStatus(500)
+            console.log('Error completing SELECT org query', error)
+            res.sendStatus(500);
         })
 })
 
@@ -80,6 +80,7 @@ router.post('/', rejectUnauthenticated, (req, res) => {
         })
         .catch((error) => {
             res.sendStatus(500);
+            console.log(error);
         });
 });
 
@@ -144,7 +145,8 @@ router.put('/', rejectUnauthenticated, (req, res) => {
             res.sendStatus(200)
         })
         .catch((error) => {
-            res.sendStatus(500)
+            res.sendStatus(500);
+            console.log(error);
         });
 });
 

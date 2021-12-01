@@ -15,6 +15,7 @@ router.get('/map', async (req, res, next) => {
         res.send(rows);
     } catch (error) {
         next(error);
+        console.log(error);
     }
 });
 

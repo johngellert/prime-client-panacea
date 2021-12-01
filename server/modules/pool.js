@@ -16,7 +16,7 @@ if (process.env.DATABASE_URL) {
     database: params.pathname.split('/')[1],
     ssl: true,
     max: 10,
-    idleTimeoutMillis: 30000,
+    idleTimeoutMillis: 30000
   };
 } else {
   config = {
@@ -24,7 +24,7 @@ if (process.env.DATABASE_URL) {
     port: 5432,
     database: 'panacea',
     max: 10,
-    idleTimeoutMillis: 30000,
+    idleTimeoutMillis: 30000
   };
 }
 

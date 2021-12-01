@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
             res.send(result.rows);
         }).catch(err => {
             res.sendStatus(500);
+            console.log(error);
         }); 
 });
 
