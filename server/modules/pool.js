@@ -1,10 +1,11 @@
 const pg = require('pg');
-const url = require('url');
+// const url = require('url');
+const Url = require('url-parse');
 
 let config = {};
 
 if (process.env.DATABASE_URL) {
-  const params = url.parse(process.env.DATABASE_URL);
+  const params = new Url(process.env.DATABASE_URL);
   const auth = params.auth.split(':');
 
   config = {
@@ -27,9 +28,7 @@ if (process.env.DATABASE_URL) {
   };
 }
 
-
 const pool = new pg.Pool(config);
-
 
 pool.on('error', (err) => {
   console.log('Unexpected error on idle client', err);

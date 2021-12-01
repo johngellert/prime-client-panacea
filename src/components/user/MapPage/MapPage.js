@@ -26,7 +26,7 @@ function MapPage(props) {
   const markerOpen = (e) => {
     const { id } = e.currentTarget;
     setOrganizationToShow(organizations.filter((org) => {
-      return org.id == id;
+      return org.id === id;
     }))
   }
 

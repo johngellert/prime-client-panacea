@@ -14,9 +14,9 @@ import {
   Typography,
   Link as MuiLink,
   IconButton,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
 } from '@material-ui/core/';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -108,8 +108,8 @@ class CityPage extends Component {
         </Paper>
         <Grid item xs={12}>
           <Paper style={{ backgroundColor: `#F8F9FA`}} square={true}>
-            <ExpansionPanel display='block' style={{width: `100%`, backgroundColor: `#F8F9FA`}}>
-              <ExpansionPanelSummary
+            <Accordion display='block' style={{width: `100%`, backgroundColor: `#F8F9FA`}}>
+              <AccordionSummary
                 expandIcon={<ExpandMoreIcon style={{color: `2ECBB0`}}/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
@@ -122,8 +122,8 @@ class CityPage extends Component {
                       {this.state.city.overview}
                     </Typography>
                 </div>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
+              </AccordionSummary>
+              <AccordionDetails>
                 <div style={{marginTop: 0}}>
                   <Typography variant='body2' gutterBottom style={{ paddingLeft: `5%`, paddingRight: `5%` }}>
                     <b>Health Risks:</b>
@@ -183,8 +183,8 @@ class CityPage extends Component {
                   }
                   </div>
                 </div>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+              </AccordionDetails>
+            </Accordion>
           </Paper>  
         </Grid>
         <Typography variant='h6' gutterBottom style={{ paddingLeft: `3%`, marginTop: '4%', marginBottom: '2%' }}>

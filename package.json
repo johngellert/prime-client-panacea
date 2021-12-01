@@ -4,8 +4,8 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
-    "@material-ui/core": "^4.3.0",
-    "@material-ui/icons": "^4.2.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.2",
     "bcrypt": "^5.0.1",
     "cookie-session": "^2.0.0-beta.3",
@@ -14,7 +14,7 @@
     "google-map-react": "^1.1.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "pg": "^7.9.0",
+    "pg": "^8.7.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.8.2",
     "react": "^16.8.6",
@@ -26,7 +26,11 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.0.2",
-    "sweetalert2": "^8.15.2"
+    "sweetalert2": "^8.15.2",
+    "url-parse": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   },
   "scripts": {
     "start": "node server/server.js",
@@ -35,9 +39,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.10"
   },
   "browserslist": [
     ">0.2%",

@@ -16,7 +16,7 @@ function Marker(organization) {
                         <span className="type">H</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
@@ -31,7 +31,7 @@ function Marker(organization) {
                         <span className="type">C</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
@@ -46,7 +46,7 @@ function Marker(organization) {
                         <span className="type">U</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
@@ -62,7 +62,7 @@ function Marker(organization) {
                         <span className="type">L</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
@@ -78,7 +78,7 @@ function Marker(organization) {
                         <span className="type">Hv</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
@@ -94,7 +94,7 @@ function Marker(organization) {
                         <span className="type">Ph</span>
                     </div>
                     {
-                        infoWindow == organization.id
+                        infoWindow === organization.id
                             ?
                             <InfoWindow visibility="show" {...organization} />
                             :
