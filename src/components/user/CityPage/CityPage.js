@@ -44,7 +44,7 @@ class CityPage extends Component {
   }
 
   componentDidUpdate(prevProps){
-    if (prevProps.match.params.cityName !== this.props.match.params) {
+    if (prevProps.match.params.cityName !== this.props.match.params.cityName) {
       return this.axiosRequest();
     }
   }
