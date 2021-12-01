@@ -3,7 +3,6 @@ const pool = require('../modules/pool');
 const { rejectUnauthenticated } = require('../modules/authentication-middleware');
 const router = express.Router();
 
-
 router.get('/', (req, res) => {
     const queryText = 'SELECT * FROM "cities" ORDER BY "id"';
     pool.query(queryText)
