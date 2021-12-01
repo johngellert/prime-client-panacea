@@ -1,4 +1,3 @@
-require("dotenv").config();
 import React, { useState, useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
@@ -72,7 +71,7 @@ function MapPage(props) {
           </div>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: process.env.GOOGLEMAPS_API_TOKEN,
+              key: process.env.REACT_APP_GOOGLEMAPS_API_TOKEN,
               language: 'en'
             }}
             center={{ lat: lat, lng: lng }}
